@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planus</title>
     <link href="css/estilos.css" rel='stylesheet'/>
+
 </head>
 <body>
+    
+    <a href="#HeaderTop"></a>
     
 
     <header>
@@ -21,12 +24,13 @@
                     <h2 id="NavText">Planus</h2>
                 </div>
                
-                <a href="">Home</a>
-                <a href="">About Me</a>
-                <a href="">What I do</a>
-                <a href="">My Projects</a>
+                <a href="#BarInfo">Home</a>
+                <a href="#AboutMe">About Me</a>
+                <a href="#WhatDo">What I do</a>
+                <a href="#WhatBlog">My Projects</a>
+                <a href="">Techonologies</a>
                 <a href="">Blog</a>
-                <a id="BoxNavContact" href="">Contact</a>
+                <a id="BoxNavContact" href="#WhatContact">Contact</a>
             </ul>
         </nav>
 
@@ -38,16 +42,19 @@
         <a id="ContactButton" href="">CONTACT ME</a>
     </header>
 
-    <div class="InformationUser">
+    <div id = "AboutMe" class="InformationUser">
 
     <h1>WHO AM I</h1>
      
-    <img src="imgs/faceOne.png" alt="">
+    <div id="faceCircles">
+        <img class="facePhotos" src="imgs/faceOne.png" alt="">
     
-    <img src="imgs/faceTwo.png" alt="">
-
-    <img src="imgs/faceThree.png" alt="">
-
+        <img class="facePhotos" src="imgs/faceTwo.png" alt="">
+    
+        <img class="facePhotos" src="imgs/faceThree.png" alt="">
+    
+    </div>
+    
 
     <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         <br>Unde totam impedit sit quibusdam pariatur quia repellat ad est, laborum cumque sapiente 
@@ -58,12 +65,16 @@
 
     </h3>
 
-    <ul>
-        <img src="" alt="">
-    </ul>
+    <div id="socialImages">
+        <img class="socialIcons" src="imgs/fbSocial.png" alt="">
+        <img class="socialIcons" src="imgs/ttSocial.png" alt="">
+        <img class="socialIcons" src="imgs/circleSocial.png" alt="">
+        <img class="socialIcons" src="imgs/gpSocial.png" alt="">
     </div>
 
-    <div class="InformationDoing">
+    </div>
+
+    <div id="WhatDo" class="InformationDoing">
 
         <h1>WHAT I DO</h1>
     
@@ -110,49 +121,124 @@
 
     </div>
 
-    <div class="InformationBlog">
+    <div id="WhatBlog" class="InformationBlog">
 
         <h1>MY BLOG</h1>
   
-        <div class="BlogContainer">
+        <div class="BlogContainer" id="containerFirst">
        
         
-        <h2>Web Design</h2>
+        <h2>Another blog post</h2>
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta optio rerum officia nulla commodi libero rem animi iusto excepturi dolorum, nihil sunt tenetur maxime totam? Eaque esse eius culpa.</h4>
         
         </div>
 
       
-        <div class="BlogContainer">
+        <div class="BlogContainer" id="containerSecond">
         
-        <h2>Branding</h2>
+        <h2>Creative Jobs</h2>
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta optio rerum officia nulla commodi libero rem animi iusto excepturi dolorum, nihil sunt tenetur maxime totam? Eaque esse eius culpa.</h4>
         
             
         </div>
 
-        <div class="BlogContainer">
+        <div class="BlogContainer"id="containerThree">
      
 
-        <h2>Print Design </h2>
+        <h2>The Planus Post</h2>
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta optio rerum officia nulla commodi libero rem animi iusto excepturi dolorum, nihil sunt tenetur maxime totam? Eaque esse eius culpa.</h4>
         
         </div>
 
-        <div class="BlogContainer">
+        <div class="BlogContainer" id="containerFourth">
         
             
-        <h2>Ilustration</h2> 
+        <h2>Everycity has some lights </h2> 
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta optio rerum officia nulla commodi libero rem animi iusto excepturi dolorum, nihil sunt tenetur maxime totam? Eaque esse eius culpa.</h>
         
+
+              
+        
         </div>
-
-        <a href="">READ OUR BLOG</a>
-
+        <a  id="ReadBlog" href="">READ OUR BLOG</a>
     </div>
  
   
     
+
+    <div id="WhatContact" class="InformationInfo">
+
+        <h1>LET´S GET IN TOUCH</h1>
+    
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <br>Unde totam impedit sit quibusdam pariatur quia repellat ad est, laborum cumque sapiente 
+            culpa asperiores ducimus eos quis ullam magnam delectus animi?
+        
+            
+        </h3>
+       
+        <div class="InterestMeet">
+        <img src="imgs/locationIcon.png" alt="">
+        
+     
+        <h4>Big Street Avue. 254  Los  Angeles, California</h4>
+        
+        </div>
+
+      
+        <div class="InterestMeet">
+        <img src="imgs/emailIcon.png" alt="">
+
+    
+        <h4>contact3@website.com </h4>
+        
+            
+        </div>
+
+        <div class="InterestMeet">
+        <img src="imgs/phoneIcon.png" alt="">
+
+       
+        <h4>(52) 872 131 8983 </h4>
+       
+             
+    </div>
+    
+        <form action="" method="post">
+
+            <p> 
+
+                <input id="nameUser"name="nameUser" type="text" placeholder="Name"/>
+            </p>
+        
+            <p> 
+                <input id="email"name="email" type="email" placeholder="Email"/>
+            </p>
+
+            <p>
+                <input type="text" name="sendText" id="TextField">
+            </p>
+
+            <p>
+                <input type="text" name="sendText" id="OperationResolve" placeholder="5+2 =">
+            </p>
+
+
+            <input type="submit" name="registrar" id="ButtonSubmit" value="SUBMIT">
+
+        </form>
+
+         
+    </div>
+
+    <footer>
+   
+
+    <div>
+        @PixelGlow - All Rights Reserved.
+    </div>
+
+    </footer>
 
 </body>
 </html>
